@@ -30,8 +30,9 @@ h2{
 }
 
 img{
-    width: 80%;
-    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;    
+    border-radius: 20px;
     box-shadow: 0 5px 20px rgba(68, 43, 4, 0.499);
 }
 
