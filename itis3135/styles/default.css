@@ -1,17 +1,20 @@
 body{
-    background-color: beige;
+    background-color: #ededed;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
+    margin: 0;
+    
+    
 
 }
 a{
-    color:dimgrey;
+    color: #344E41;
     text-decoration: none;
 
 }
 
 a:hover{
-    color: aquamarine;
+    color: #fb8500;
     text-decoration: line;
 }
 
@@ -19,6 +22,7 @@ main{
     text-align: left;
     margin-left: 20%;
     margin-right: 20%;
+    padding: 10px 0;
 }
 
 h2{
@@ -27,7 +31,8 @@ h2{
 
 img{
     width: 80%;
-
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(68, 43, 4, 0.499);
 }
 
 figure{
@@ -38,3 +43,30 @@ figure{
 p{
     text-align: center;
 }
+
+ul li{
+    padding: 7px 0;
+}
+
+figcaption{
+    padding-top: 20px;
+}
+
+header{
+  padding: 20px;
+  background-color: #A3B18A;
+  color: black;
+  border-bottom: 10px solid #588157;
+  box-shadow: 0 5px 20px rgba(68, 43, 4, 0.499);
+}
+
+#paragraph p{
+    text-align: justify;
+}
+/*footer{
+    padding: 20px;
+  background-color: #A3B18A;
+  color: black;
+  border-top: 10px solid #588157;
+  box-shadow: 0 -5px 20px rgba(68, 43, 4, 0.499);
+}*/
