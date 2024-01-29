@@ -64,6 +64,23 @@ header{
 #paragraph p{
     text-align: justify;
 }
+
+.row-head{
+    background-color: gray;
+}
+
+.r1{
+    background-color: white;
+}
+
+.r2{
+    background-color: lightgray;
+}
+
+.Apprentices{
+    background-color: white;
+}
+
 /*footer{
     padding: 20px;
   background-color: #A3B18A;
