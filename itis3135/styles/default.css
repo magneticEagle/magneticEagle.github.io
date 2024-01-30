@@ -15,7 +15,7 @@ a{
 
 a:hover{
     color: #fb8500;
-    text-decoration: line;
+    text-decoration: underline;
 }
 
 main{
@@ -69,6 +69,12 @@ p, h2{
     text-align: justify;
 }
 
+footer{
+    margin-bottom: 20px;
+}
+
+/*Tables*/
+
 .row-head{
     background-color: gray;
 }
@@ -81,7 +87,7 @@ p, h2{
     background-color: lightgray;
 }
 
-Apprentices{
+.Apprentices{
     background-color: white;
 }
 
@@ -92,3 +98,59 @@ Apprentices{
   border-top: 10px solid #588157;
   box-shadow: 0 -5px 20px rgba(68, 43, 4, 0.499);
 }*/
+
+
+/*Forms*/
+form {
+    width: 60vw;
+    max-width: 400px;
+    min-width: 100px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    color: #344E41;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input, select {
+    background-color: white;
+    border: 1px solid #fb8500;
+    color: #1f2e1f;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"], input[type="reset"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #344E41;
+    border-color: #fb8500;
+    color: #A3B18A;
+    min-width: 100px;
+}
+
+
+.inline{
+    display: inline; 
+}

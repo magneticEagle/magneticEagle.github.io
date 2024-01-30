@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 || Matvey Ermakov's Magnetic Eagle || Forms</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <h1>ITIS 3135 || Matvey Ermakov's Magnetic Eagle</h1>
+        <nav>
+            <a href="./">Home</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="tables.html">Tables</a>
+            ||
+            <a href="forms.html">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Forms</h2>
+    <form action="#">
+        <fieldset>
+            <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" size="10" required /></label>
+            <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" size="10" required /></label>
+            <label for="phone-number">Phone Number: <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required /></label>
+            <label for="email">Email: <input id="email" name="email" type="email" required /></label>    
+        </fieldset>
+        <fieldset>
+            <label for="vacation">Select your preferred vacation destinations (Check all that apply)
+                <label for="beach"></label><input class="inline" id="beach" type="checkbox"  name="vacation" /> Beach</label>
+                <label for="mountains"></label><input class="inline" id="mountains" type="checkbox"  name="vacation" /> Mountains</label>
+                <label for="city"></label><input class="inline" id="city" type="checkbox"  name="vacation" /> City</label>
+                <label for="countryside"></label><input class="inline" id="countryside" type="checkbox"  name="vacation" /> Countryside</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Are there aliens out there?</label>
+            <label for="yes"><input id="yes" type="radio" name="aliens" class="inline" checked /> Yes</label>
+            <label for="no"><input id="no" type="radio" name="aliens" class="inline" /> No</label>
+            <label for="perhaps"><input id="perhaps" type="radio" name="aliens" class="inline" /> Perhaps</label>
+        </fieldset>
+        <fieldset>
+            <label for="seasons">What is your favorite season?
+            <select id="seasons" name="seasons">
+                <option value="">(select one)</option>
+                <option value="1">Spring</option>
+                <option value="2">Summer</option>
+                <option value="3">Fall</option>
+                <option value="4">Winter</option>
+            </select>
+            </label>
+        </fieldset>
+      
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+    </main>
+    <footer>
+        <a href="https://webpages.charlotte.edu/mermakov/">Charlotte.edu</a>
+        ||
+        <a href="https://github.com/magneticEagle/">Github</a>
+        ||
+        <a href="https://magneticEagle.github.io/itis3135/">Github.io</a>
+        ||
+        <a href="https://www.freecodecamp.org/the0neWhoCodes">freeCodeCamp</a>
+        ||
+        <a href="https://www.codecademy.com/profiles/magneticEagle">Codecademy</a>
+        ||
+        <a href="https://www.linkedin.com/in/matvey-ermakov/">LinkedIn</a>
+
+        <p>designed by <a href="magneticeagle.com/">Magnetic Eagle Solutions</a> &copy;2024</p>
+
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+           </a>
+           <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+             </a>
+                
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script> 
+</body>
+
+</html>
