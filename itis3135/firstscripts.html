@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matvey Ermakov's Magnetic Eagle || ITIS 3135 || Homepage</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <h1>ITIS 3135 || Matvey Ermakov's Magnetic Eagle</h1>
+        <nav>
+            <a href="./">Home</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="tables.html">Tables</a>
+            ||
+            <a href="forms.html">Forms</a>
+            ||
+            <a href="website_evaluations.html">Website Evaluations</a>
+        </nav>
+        <h3>Other Pages:</h3>
+        <nav>
+            <a href="/mermakov/itis3135/stuff/$ WHAT.htm">CRAPPY Webpage</a>
+                        
+        </nav>
+    </header>
+    <main>
+        <h2>First Scripts</h2>
+        <h3 id="currentDateHeading"></h3>
+        
+            <fieldset>
+                <label for="user-name">Name: <input id="user-name" name="user-name" type="text" size="10" required /></label>
+                <label for="feeling">How are you doing today? <input id="feeling" name="feeling" type="text" size="10" required /></label>
+            </fieldset>
+            <input type="submit" onclick="userGreeting()" value="Submit" />
+            <p id="greeting"></p>
+
+            <fieldset>
+                <label for="fav-number">Enter your favorite number (0-10): <input id="fav-number" name="fav-number" type="number" min="0" max="10" required /></label>
+            </fieldset>
+            <input type="submit" onclick="favoriteNumber()" value="Submit" />
+            <p id="polygon"></p>
+    </main>
+    <footer>
+        <a href="https://webpages.charlotte.edu/mermakov/">Charlotte.edu</a>
+        ||
+        <a href="https://github.com/magneticEagle/">Github</a>
+        ||
+        <a href="https://magneticEagle.github.io/itis3135/">Github.io</a>
+        ||
+        <a href="https://www.freecodecamp.org/the0neWhoCodes">freeCodeCamp</a>
+        ||
+        <a href="https://www.codecademy.com/profiles/magneticEagle">Codecademy</a>
+        ||
+        <a href="https://www.linkedin.com/in/matvey-ermakov/">LinkedIn</a>
+
+        <p>designed by <a href="magneticeagle.com/">Magnetic Eagle Solutions</a> &copy;2024</p>
+
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" style='text-decoration:none;'>
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+           </a>
+           <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" style='text-decoration:none;'>
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+             </a>
+                
+    </footer>
+    
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script> 
+    <script src="./scripts/firstScripts.js"></script>
+</body>
+
+</html>
