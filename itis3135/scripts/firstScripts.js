@@ -39,6 +39,43 @@ function favoriteNumber(){
     let text = `Your favorite number is ${favNumber}! Did you know that a polygon with ${favNumber} sides is called a ${polygons[favNumber]}?`
     
     alert(text);
-    polygon.innerHTML = text;
+}
 
+//BRAND FUNCTIONS
+let randomNumber = null;
+
+function dice(){
+    let diceResult = document.getElementById("dice-result");
+
+    const result = Math.floor(Math.random(1) * 7);
+    
+    if(result == 1){diceResult.innerHTML = `You get ${result} magnet!`;}
+    else{diceResult.innerHTML = `You get ${result} magnets!`;}
+    randomNumber = result;
+}
+
+function magnetsPrice(){
+    let priceResult = document.getElementById("magnets-price-result");
+    
+    if(randomNumber == null){priceResult.innerHTML = "You have not rolled the dice yet :)"}
+    else{priceResult.innerHTML = `The price of ${randomNumber} $3 magnets will be $${randomNumber * 3}`}     
+}
+
+function magnetsTaxPrice(){
+    let taxResult = document.getElementById("magnets-tax-result");
+    
+    if(randomNumber == null){taxResult.innerHTML = "You have not rolled the dice yet :)"}
+    else{taxResult.innerHTML = `The total price with tax of ${randomNumber} $3 magnets will be $${randomNumber * 3 * 1.0475}`}  
+}
+
+let lastMessage = document.getElementById("last-message");
+
+function purchaseYes(){
+    if(randomNumber == null){lastMessage.innerHTML = "You have not rolled the dice yet :)"}
+    else{lastMessage.innerHTML = `Thank you for your purchase! Your magenets will be delivered to your address withing 5-7 business days. (Don't ask as how we know where you live)`}  
+}
+
+function purchaseNo(){
+    if(randomNumber == null){lastMessage.innerHTML = "You have not rolled the dice yet :)"}
+    else{lastMessage.innerHTML = `Understandable, have a good day!`}
 }

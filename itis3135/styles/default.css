@@ -3,14 +3,11 @@ body{
     text-align: center;
     font-family: sans-serif;
     margin: 0;
-    
-    
-
 }
+
 a{
     color: #344E41;
     text-decoration: none;
-
 }
 
 a:hover{
@@ -25,7 +22,7 @@ main{
     padding: 10px 0;
 }
 
-h2, h3{
+h2, h3, p{
     text-align: center;
 }
 
@@ -39,10 +36,6 @@ img{
 figure{
     text-align: center;
     font-style: italic;
-}
-
-p{
-    text-align: center;
 }
 
 ul li{
@@ -124,9 +117,6 @@ input, select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
-}
-
-input, select {
     background-color: white;
     border: 1px solid #fb8500;
     color: #1f2e1f;
@@ -136,6 +126,7 @@ input, select {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
+    display: inline; 
 }
 
 input[type="submit"], input[type="reset"] {
@@ -148,11 +139,33 @@ input[type="submit"], input[type="reset"] {
     border-color: #fb8500;
     color: #A3B18A;
     min-width: 100px;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
+/*MEDIA QUARIES*/
+/* MOBILE RULES */
 
-.inline{
-    display: inline; 
+/* Foundational Three */
+main, .maincontainer {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
-
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    *{
+        font-size: 120%;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    *{
+        font-size: 110%;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    *{
+        font-size: 110%;
+    }
+}
