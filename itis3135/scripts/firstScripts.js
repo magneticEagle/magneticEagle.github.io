@@ -69,7 +69,7 @@ function magnetsTaxPrice(){
 
 function purchaseYes(){
     if(randomNumber == null){lastMessage.innerHTML = "You have not rolled the dice yet :)"}
-    else{lastMessage.innerHTML = `Thank you for your purchase! Your magenets will be delivered to your address within 5-7 business days. (Don't ask as how we know where you live)`}  
+    else{lastMessage.innerHTML = `Thank you for your purchase! Your magenets will be delivered to your address within 5-7 business days. (Don't ask us how we know where you live)`}  
 }
 
 function purchaseNo(){
