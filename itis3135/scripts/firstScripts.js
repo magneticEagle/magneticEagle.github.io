@@ -43,10 +43,13 @@ function favoriteNumber(){
 
 //BRAND FUNCTIONS
 let randomNumber = null;
+let diceResult = document.getElementById("dice-result");
+let priceResult = document.getElementById("magnets-price-result");
+let taxResult = document.getElementById("magnets-tax-result");
+let lastMessage = document.getElementById("last-message");
+
 
 function dice(){
-    let diceResult = document.getElementById("dice-result");
-
     const result = Math.floor(Math.random(1) * 7);
     
     if(result == 1){diceResult.innerHTML = `You get ${result} magnet!`;}
@@ -55,27 +58,32 @@ function dice(){
 }
 
 function magnetsPrice(){
-    let priceResult = document.getElementById("magnets-price-result");
-    
     if(randomNumber == null){priceResult.innerHTML = "You have not rolled the dice yet :)"}
     else{priceResult.innerHTML = `The price of ${randomNumber} $3 magnets will be $${randomNumber * 3}`}     
 }
 
 function magnetsTaxPrice(){
-    let taxResult = document.getElementById("magnets-tax-result");
-    
     if(randomNumber == null){taxResult.innerHTML = "You have not rolled the dice yet :)"}
     else{taxResult.innerHTML = `The total price with tax of ${randomNumber} $3 magnets will be $${randomNumber * 3 * 1.0475}`}  
 }
 
-let lastMessage = document.getElementById("last-message");
-
 function purchaseYes(){
     if(randomNumber == null){lastMessage.innerHTML = "You have not rolled the dice yet :)"}
-    else{lastMessage.innerHTML = `Thank you for your purchase! Your magenets will be delivered to your address withing 5-7 business days. (Don't ask as how we know where you live)`}  
+    else{lastMessage.innerHTML = `Thank you for your purchase! Your magenets will be delivered to your address within 5-7 business days. (Don't ask as how we know where you live)`}  
 }
 
 function purchaseNo(){
     if(randomNumber == null){lastMessage.innerHTML = "You have not rolled the dice yet :)"}
     else{lastMessage.innerHTML = `Understandable, have a good day!`}
 }
+
+//DYNAMIC LOADING
+document.getElementById("dice").addEventListener("click", function(){
+    document.getElementById("section-one").classList.remove("first-scripts-content");
+});
+document.getElementById("magnets-price").addEventListener("click", function(){
+    document.getElementById("section-two").classList.remove("first-scripts-content");
+});
+document.getElementById("tax-price").addEventListener("click", function(){
+    document.getElementById("section-three").classList.remove("first-scripts-content");
+});

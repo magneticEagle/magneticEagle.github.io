@@ -31,20 +31,26 @@
             </fieldset>
             <p id="dice-result"></p>
 
+            <div id="section-one" class="first-scripts-content">
             <fieldset>
                 <label for="magnets-price">Now let's see how much your magnets will cost you:<input id="magnets-price" type="submit" onclick="magnetsPrice()" value="Calculate it!" /></label>
             </fieldset>
             <p id="magnets-price-result"></p>
+            </div>
 
+            <div id="section-two" class="first-scripts-content">
             <fieldset>
                 <label for="tax-price">The price of your magnets with tax will be:<input id="tax-price" type="submit" onclick="magnetsTaxPrice()" value="Tax it!" /></label>
             </fieldset>
             <p id="magnets-tax-result"></p>
+            </div>
 
+            <div id="section-three" class="first-scripts-content">
             <fieldset>
                 <label for="tax-price">Would you like to purchase your magnets at the given price?<input id="tax-price" type="submit" onclick="purchaseYes()" value="Yes!" /><input id="tax-price" type="submit" onclick="purchaseNo()" value="Not today" /></label>
             </fieldset>
             <p id="last-message"></p>
+            </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>

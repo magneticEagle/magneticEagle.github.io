@@ -66,6 +66,10 @@ footer{
     margin-bottom: 20px;
 }
 
+.first-scripts-content{
+    display: none;
+}
+
 /*Tables*/
 
 .row-head{
