@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matvey Ermakov's Magnetic Eagle || ITIS 3135 || BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+        <form action="#">
+            <fieldset>
+                <label for="name">Name: <input id="name" name="name" type="text" size="10" required /></label>
+                <label for="mascot">Mascot: <input id="mascot" name="mascot" type="text" size="10" required /></label>
+                <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+                <label for="email">Email: <input id="email" name="email" type="email" required /></label>    
+            </fieldset>
+            <fieldset>
+                <label for="vacation">Select your preferred vacation destinations (Check all that apply)
+                    <label for="beach"></label><input class="inline" id="beach" type="checkbox"  name="vacation" /> Beach</label>
+                    <label for="mountains"></label><input class="inline" id="mountains" type="checkbox"  name="vacation" /> Mountains</label>
+                    <label for="city"></label><input class="inline" id="city" type="checkbox"  name="vacation" /> City</label>
+                    <label for="countryside"></label><input class="inline" id="countryside" type="checkbox"  name="vacation" /> Countryside</label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Are there aliens out there?</label>
+                <label for="yes"><input id="yes" type="radio" name="aliens" class="inline" checked /> Yes</label>
+                <label for="no"><input id="no" type="radio" name="aliens" class="inline" /> No</label>
+                <label for="perhaps"><input id="perhaps" type="radio" name="aliens" class="inline" /> Perhaps</label>
+            </fieldset>
+            <fieldset>
+                <label for="seasons">What is your favorite season?
+                <select id="seasons" name="seasons">
+                    <option value="">(select one)</option>
+                    <option value="1">Spring</option>
+                    <option value="2">Summer</option>
+                    <option value="3">Fall</option>
+                    <option value="4">Winter</option>
+                </select>
+                </label>
+            </fieldset>
+          
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script> 
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matvey Ermakov's Travel Photography Page</title>
+    <style>
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #FBFFFF;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/lakeBackground.png');
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #555555;
+    
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20%;
+    padding-left: 20%;
+    display: flex;
+    justify-content: center;    
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #FBFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3{
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+p{
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: auto; 
+}
+
+/*footer button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+}*/
+
+footer a {
+    color: #555555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+figure {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.reg-img{
+    max-width: 400px;
+    width: 100%;    
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#FBFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    width: 70%;
+}
+
+/* Foundational Three */
+/*main, .maincontainer {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
+}*/
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 24px;
+    }
+    figcaption {
+        font-size: 24px;
+    }
+    li{
+        font-size: 30px;
+    }
+    section {
+        margin-bottom: 40px;
+        background-color: #FBFFFF;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    main {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 300px ) and ( max-width: 600px ) {
+    .reg-img{
+        min-width: 150px;
+        width: 100%;    
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    figure{
+        font-size: 15px;
+        text-align: center;
+    }
+    main {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header >
+        <div id="header-content">
+            <h1>Travel Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#times">Best Times</a></li>
+                <li><a href="#locations">Best Locations</a></li>
+                <li><a href="#process">The Process</a></li>
+                <li><a href="#reason">The Reason</a></li>
+                <li><a href="#ai">AI Prompts</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <h3>
+                <p>Hi, my name is Matvey, welcome to my web page!</p>
+                <figure>
+                    <img src="images/matvey.jpg" alt="Matvey in Osaka" class="reg-img">
+                    <figcaption>Matvey in Osaka</figcaption>
+                </figure>
+                <p style="text-align: center;">On these pages I will share more about my hobby of travel photography.</p>
+            </h3>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <h3>
+                <p>Hi, my name is Matvey, I've spent a big part of my life in Charlotte, however, I have a multi-cultural background, having grown up in Europe, which made traveling to other European countries a bit easier.</p>
+                <figure>
+                    <img src="images/climbing.jpg" alt="Matvey climbing a mountain" class="reg-img">
+                    <figcaption>Climbing a mountain for some reason, even though I'm supposed to bike on it.</figcaption>
+                </figure>
+                <p>I am a sophomore at UNC Charlotte majoring in Human-Computer Interaction. Through study at the university and on my own time I keep learning more and more on the topic of web design which I am also passionate about. I also enjoy such hobbies as listening to music and mountain biking.</p>
+            </h3>
+        </section>
+        <section id="times">
+            <h2>Best Times</h2>
+            <h3>
+                <p>Here is a list of my favorite times to photograph:</p>
+                <ul>
+                    <li><b>Sunset</b> - The minutes before the sun disappears for the day color the skies with incredible colors, even during seemingly gloomy weather.</li>
+                </ul>
+                    <figure>
+                        <img src="images/sunSet.png" alt="Sunset example" class="reg-img">
+                        <figcaption>Hilton Head, South Carolina</figcaption>
+                    </figure>
+                <ul>
+                    <li><b>The Golden Hour</b> - This time is a bit different from sunset. It begins about an hour before the sun disappears and colors everything with golden light, an easy way to make ordinary pictures look stunning.</li>
+                </ul>
+                    <figure>
+                        <img src="images/goldenHour.png" alt="Golden hour example" class="reg-img">
+                        <figcaption>Gatlinburg, Tennessee</figcaption>
+                    </figure>
+                <ul>
+                    <li><b>Night + Rain</b> - Especially true for urban environments, the lights of the night reflect from puddles and pavement, creating interesting light patterns.</li>
+                </ul>    
+                    <figure>
+                        <img src="images/nightRain.png" alt="Night and rain example" class="reg-img">
+                        <figcaption>Ikebukuro, Japan</figcaption>
+                    </figure>
+            </h3>
+        </section>
+        <section id="locations">
+            <h2>Best Locations</h2>
+            <h3>
+                <p>Here is a list of my favorite location types to photograph with examples:</p>
+                <ul>
+                    <li><b>Cityscapes</b> - These can be captured from a mountain, a tall building, or from any other high vantage point. It is always nice to take a moment to take in the scenery and the sounds of the city.</li>
+                </ul>
+                            <figure>
+                                <img src="images/newYorkCityscape.png" alt="New York, New York" class="reg-img">
+                                <figcaption>New York, New York</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/osakaCityscape.png" alt="Osaka, Japan" class="reg-img">
+                                <figcaption>Osaka, Japan</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/shibuyaCrossing.png" alt="Sunset example" class="reg-img">
+                                <figcaption>Tokyo, Japan</figcaption>
+                            </figure>
+                <ul>
+                    <li><b>Mountains</b> - While roads such as Blue Ridge Parkway offer great views on mountains, the most unique shots are usually captured after as a reward for hiking, which is perfect for those who like spending time with nature.</li>
+                </ul>
+                            <figure>
+                                <img src="images/appalachians.png" alt="Appalachian Mountains" class="reg-img">
+                                <figcaption>Appalachian Mountains</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/grandCanyon.png" alt="The Grand Canyon" class="reg-img">
+                                <figcaption>The Grand Canyon</figcaption>
+                            </figure>
+                <ul>
+                    <li><b>Small streets</b> - Views of cityscapes are usually charged with the energy of a bustling metropolis, however, the metropolis is usually made up of smaller streets which can often have a very cozy atmosphere.</li>
+                </ul>
+                        <figure>
+                            <img src="images/tokyoAlley.png" alt="Tokyo, Japan" class="reg-img">
+                            <figcaption>Tokyo, Japan</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/chattanoogaAlley.png" alt="Chattanooga, Tennessee" class="reg-img">
+                            <figcaption>Chattanooga, Tennessee</figcaption>
+                        </figure>
+            </h3>
+        </section>
+        <section id="process">
+            <h2>The Process</h2>
+                <p>Over the years I got to travel to many places, along with family, friends, or by myself. On every journey I had took one very common item with me: my phone. I started taking pictures on a very old phone where the quality was not the best, but through finding the right angles and editing I was able to make it work.</p>
+                <figure>
+                    <img src="images/canonCamera.png" alt="Canon M50" class="reg-img">
+                    <figcaption>Canon M50</figcaption>
+                </figure>
+                <p>Around 2019 I got into Google Pixel phones, which were advertised to have one of the best cameras on the market. It appeared to be true, and it was a drastic improvements in the pictures I was able to take. Though over the years, as I got more into the hobby I wanted to use something more professional. A few years back I got my first mirrorless camera, Canon M50. It was a beginner camera, and although it was tricky to use it at first, soon I was able to appreciate all the features and capture moments even better.</p>
+            <h3></h3>
+        </section>
+        <section id="reason">
+            <h2>The Reason</h2>
+            <h3>
+                <p>Having visited many countries I believe myself to be a global thinker. The world is a wonderful place with plenty of see and explore. Wanting to capture the world's precious moments and views I took on the hobby of photography, to share it with more people.</p>
+                <p>I have always liked exploring, going on adventures, venturing out into new territory (figuratively and literally), so photography can serve as way to encourage oneself and others of not being afraind of the challenge. Speaking of challenges, it can take some dexterity to capture just the right angle, as well as selecting the right settings on the camera.</p>
+                <figure>
+                    <img src="images/norway.png" alt="Norway" class="reg-img">
+                    <figcaption>Norway</figcaption>
+                </figure>
+            </h3>
+        </section>
+        <section id="ai">
+            <h2>AI Promts</h2>
+            <h3>
+                <p>During the production of this website the latest AI text-generating technologies were utilized in order to add a modern feel to the website.</p>
+                <p>The beginning was simple. After the basic layout of the website was created by hand, in order to test just what AI is capable of, the directions for the project were copied and pasted into ChatGPT. The results were three sections/documents one for HTML, CSS, and JavaScript.</p>
+                <p>The generated HTML for the navbar and the JavaScript logic for it were used in the project with slight modifications.</p>
+                <figure>
+                    <img src="images/navbar.png" alt="navbar" class="reg-img">
+                    <figcaption>HTML</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/javascriptGen.png" alt="JavaScript" class="reg-img">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <p>Then, ChatGPT was asked, "Make the CSS look like something as simplistic and modern as the Apple website" so it came up with the following code which was taken and modified to fit the project's requirements.</p>
+                <figure>
+                    <img src="images/cssGen.png" alt="CSS" class="reg-img">
+                    <figcaption>CSS</figcaption>
+                </figure>
+            </h3>
+        </section>
+    </main>
+    <footer>
+        <p>designed by <a href="ermakovdesigns.com/">Ermakov Design Solutions</a> &copy;2024, <a href="https://www.freecodecamp.org/certification/the0newhocodes/responsive-web-design">Certified in RWD.</a></p>
+
+<a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" style='text-decoration:none;'>
+    <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+   </a>
+   <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" style='text-decoration:none;'>
+    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+     </a>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script> 
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('main section');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+
+            sections.forEach(section => {
+                if (section.id === targetId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Display only the "Home" section by default
+    sections.forEach(section => {
+        if (section.id === 'home') {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+});
+    </script>
+</body>
+</html>
