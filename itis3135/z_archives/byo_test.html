@@ -18,7 +18,7 @@
             <fieldset>
                 <label for="name">Name: <input id="name" name="name" type="text" size="10" required /></label>
                 <label for="mascot">Mascot: <input id="mascot" name="mascot" type="text" size="10" required /></label>
-                <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" required/></label>
+                <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
                 <label for="image-caption">Image caption: <input id="image-caption" name="image-caption" type="text" required /></label>
                 <label for="personal-background">Personal background: <input id="personal-background" name="personal-background" type="text" required /></label>
                 <label for="professional-background">Professional background: <input id="professional-background" name="professional-background" type="text" required /></label>
@@ -103,13 +103,14 @@
     }
 
     function validateForm() {
-        return true;
+        // Add your form validation logic here
+        return true; // For demonstration purposes, always return true
     }
 
     function generateIntroPage() {
+        // Gather form data
         const name = document.getElementById('name').value;
         const mascot = document.getElementById('mascot').value;
-        const imageCaption = document.getElementById('image-caption').value;
         const personalBackground = document.getElementById('personal-background').value;
         const professionalBackground = document.getElementById('professional-background').value;
         const academicBackground = document.getElementById('academic-background').value;
@@ -117,10 +118,8 @@
         const primaryComputer = document.getElementById('primary-computer').value;
         const funnyThing = document.getElementById('funny-thing').value;
         const anythingElse = document.getElementById('anything-else').value;
-        
-        var image = document.getElementById('profile-picture').files[0];
-        const imageUrl = URL.createObjectURL(image);
 
+        // Gather course data
         const courseEntries = [];
         const courseInputs = document.querySelectorAll('input[id^="entry-name"]');
         courseInputs.forEach(input => {
@@ -130,11 +129,12 @@
             courseEntries.push(`<li><b>${courseName}</b>: ${courseReason}</li>`);
         });
 
+        // Generate HTML code
         const introPageContent = `
             <h2>Introduction</h2>
             <figure>
-                <img src="${imageUrl}" alt="${imageCaption}">
-                <figcaption>${imageCaption}</figcaption>
+                <img src="" alt="${name} in ${mascot}">
+                <figcaption>${name} in ${mascot}</figcaption>
             </figure>
             <ul>
                 <li><b>Personal Background:</b> ${personalBackground}</li>
@@ -155,7 +155,7 @@
         `;
         output.innerHTML = introPageContent;
 
-        
+        // Replace page content with generated HTML
         document.getElementById('back-button').addEventListener('click', handleBack);
         output.classList.remove('hide');
         form.classList.add('hide');

@@ -1,52 +1,54 @@
-body{
-    background-color: #ededed;
-    text-align: center;
-    font-family: sans-serif;
-    margin: 0;
+body {
+  background-color: #ededed;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
 }
 
-a{
-    color: #344E41;
-    text-decoration: none;
+a {
+  color: #344E41;
+  text-decoration: none;
 }
 
-a:hover{
-    color: #fb8500;
-    text-decoration: underline;
+a:hover {
+  color: #fb8500;
+  text-decoration: underline;
 }
 
-main{
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 10px 0;
+main {
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px 0;
 }
 
-h2, h3, p{
-    text-align: center;
+h2,
+h3,
+p {
+  text-align: center;
 }
 
-img{
-    max-width: 400px;
-    width: 100%;    
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(68, 43, 4, 0.499);
+img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(68, 43, 4, 0.499);
 }
 
-figure{
-    text-align: center;
-    font-style: italic;
+figure {
+  text-align: center;
+  font-style: italic;
 }
 
-ul li{
-    padding: 7px 0;
+ul li {
+  padding: 7px 0;
 }
 
-figcaption{
-    padding-top: 20px;
+figcaption {
+  padding-top: 20px;
 }
 
-header{
+header {
   padding: 20px;
   background-color: #A3B18A;
   color: #1f2e1f;
@@ -54,38 +56,53 @@ header{
   box-shadow: 0 5px 20px rgba(68, 43, 4, 0.499);
 }
 
-p, h2{
-    color: #1f2e1f;
+p,
+h2 {
+  color: #1f2e1f;
 }
 
-#paragraph p{
-    text-align: justify;
+#paragraph p {
+  text-align: justify;
 }
 
-footer{
-    margin-bottom: 20px;
+footer {
+  margin-bottom: 20px;
 }
 
-.first-scripts-content{
-    display: none;
+.first-scripts-content {
+  display: none;
+}
+
+#no-css-button-div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#no-css-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
 }
 
 /*Tables*/
 
-.row-head{
-    background-color: gray;
+.row-head {
+  background-color: gray;
 }
 
-.r1{
-    background-color: white;
+.r1 {
+  background-color: white;
 }
 
-.r2{
-    background-color: lightgray;
+.r2 {
+  background-color: lightgray;
 }
 
-.Apprentices{
-    background-color: white;
+.Apprentices {
+  background-color: white;
 }
 
 /*footer{
@@ -99,77 +116,86 @@ footer{
 
 /*Forms*/
 form {
-    width: 60vw;
-    max-width: 400px;
-    min-width: 100px;
-    margin: 0 auto;
-    padding-bottom: 2em;
+  width: 60vw;
+  max-width: 400px;
+  min-width: 100px;
+  margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 fieldset {
-    border: none;
-    padding: 1rem 0;
-    color: #344E41;
+  border: none;
+  padding: 1rem 0;
+  color: #344E41;
 }
 
 label {
-    display: block;
-    margin: 0.5rem 0;
+  display: block;
+  margin: 0.5rem 0;
 }
 
-input, select {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-    background-color: white;
-    border: 1px solid #fb8500;
-    color: #1f2e1f;
+input,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: white;
+  border: 1px solid #fb8500;
+  color: #1f2e1f;
 }
 
 .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-    display: inline; 
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  display: inline;
 }
 
-input[type="submit"], input[type="reset"] {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #344E41;
-    border-color: #fb8500;
-    color: #A3B18A;
-    min-width: 100px;
-    margin-top: 10px;
+input[type="submit"],
+input[type="reset"],
+button,
+#no-css-button {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #344E41;
+  border-color: #fb8500;
+  color: #A3B18A;
+  min-width: 100px;
+  margin-top: 10px;
+  max-width: 300px;
 }
 
 /*MEDIA QUARIES*/
 /* MOBILE RULES */
 
 /* Foundational Three */
-main, .maincontainer {
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1200px;
+main,
+.maincontainer {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
+
 /* Rule Overrides For Laptops / Small Screens */
-@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    *{
-        font-size: 120%;
-    }
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+  * {
+    font-size: 120%;
+  }
 }
+
 /* Rule Overrides For Tablet Devices */
-@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    *{
-        font-size: 110%;
-    }
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  * {
+    font-size: 110%;
+  }
 }
+
 /* Rule Overrides For Mobile Devices */
-@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    *{
-        font-size: 110%;
-    }
+@media screen and (min-width: 370px) and (max-width: 600px) {
+  * {
+    font-size: 110%;
+  }
 }
